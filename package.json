@@ -1,0 +1,50 @@
+{
+  "name": "cs-foundation-lab",
+  "version": "1.0.0",
+  "description": "CS fundamentals to systems design learning lab",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "test": "node --test \"data-structures/**/*.test.js\" \"capstone/**/*.test.js\"",
+    "test:ds": "node scripts/test-ds.js",
+    "test:complexity": "node scripts/test-ds.js complexity",
+    "test:linked-lists": "node scripts/test-ds.js linked-lists",
+    "test:stacks": "node scripts/test-ds.js stacks",
+    "test:queues": "node scripts/test-ds.js queues",
+    "test:doubly-linked-lists": "node scripts/test-ds.js doubly-linked-lists",
+    "test:hash-maps": "node scripts/test-ds.js hash-maps",
+    "test:trees": "node scripts/test-ds.js trees",
+    "test:graphs": "node scripts/test-ds.js graphs",
+    "test:recursion": "node scripts/test-ds.js recursion",
+    "test:searching": "node scripts/test-ds.js searching",
+    "test:sorting": "node scripts/test-ds.js sorting",
+    "test:graph-traversal": "node scripts/test-ds.js graph-traversal",
+    "test:week1": "node scripts/test-ds.js week1",
+    "test:week2": "node scripts/test-ds.js week2",
+    "test:week3": "node scripts/test-ds.js week3",
+    "test:week4": "node scripts/test-ds.js week4",
+    "test:week5": "node scripts/test-ds.js week5",
+    "test:week6-8": "node scripts/test-ds.js week6-8",
+    "test:algorithms": "node scripts/test-ds.js algorithms",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "migrate": "node capstone/db/migrate.js",
+    "capstone:start": "node capstone/api/server.js",
+    "benchmark": "node data-structures/week6-8-algorithms/benchmarks/run.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "eslint": "^9.17.0",
+    "eslint-config-prettier": "^9.1.0",
+    "globals": "^15.14.0",
+    "prettier": "^3.4.2"
+  },
+  "packageManager": "pnpm@9.15.0"
+}
